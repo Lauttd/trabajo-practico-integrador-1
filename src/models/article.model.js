@@ -6,6 +6,5 @@ export const articleModel = sequelize.define("article", {
     content: { type: DataTypes.TEXT(50), allowNull: false },
     excerpt: { type: DataTypes.STRING(500) },
     status: { type: DataTypes.ENUM("published", "archived"), defaultValue: "published" },
-    user_id: { type: DataTypes.INTEGER }
 });
 
